@@ -12,7 +12,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from helpers.utils import delete, download, get_admins, is_admin, get_buttons, get_link, leave_call, play, get_playlist_str, send_playlist, shuffle_playlist, start_stream, stream_from_link
 
 admin_filter=filters.create(is_admin)
-TGPIC = "https://telegra.ph/file/014ffdd6d0c8c65a91154.jpg"
+TGPIC = "https://telegra.ph/file/2939dc9a2c5733fb8de2f.mp4"
 
 
 @Client.on_message(filters.command(["stream", f"stream@{Config.BOT_USERNAME}"]) & (filters.chat(Config.CHAT_ID) | filters.private | filters.chat(Config.LOG_GROUP)))
@@ -212,11 +212,8 @@ allcmd = ["stream", "playlist", f"stream@{Config.BOT_USERNAME}", f"playlist@{Con
 async def not_chat(_, m: Message):
     buttons = [
             [
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url="https://t.me/DeeCodeBots"),
-                InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/DeCodeSupport"),
-            ],
-            [
-                InlineKeyboardButton("Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ", url="https://heroku.com/deploy?template=https://github.com/TeamDeeCode/VcVideoPlayer/tree/alpha"),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url="https://t.me/lkhitech"),
+                InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/hitechlkgroup"),
             ]
          ]
     await m.reply_text(text="`Sorry, You Can't Use This Bot In This Group 🤷‍♂️! But You Can Make Your Own Bot Like This!`", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
